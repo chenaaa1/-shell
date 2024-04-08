@@ -1,0 +1,10 @@
+[Unit]
+Description=test
+After=default.target
+
+[Service]
+Type=forking    # 表示后台运行模式
+ExecStart=/root/test/test.sh    #启动服务时执行的命令
+
+[Install]
+WantedBy=default.target
